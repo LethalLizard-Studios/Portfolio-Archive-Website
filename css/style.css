@@ -51,7 +51,7 @@ main {
 }
 
 header{
-    border-bottom: 0.25em solid white;
+    border-bottom: 3px solid white;
     padding: 1em 0 1em 0;
     text-align: center;
     justify-content: center;
@@ -60,7 +60,7 @@ header{
 }
 
 footer{
-    border-top: 0.25em solid white;
+    border-top: 3px solid white;
     padding: 1em 0 1em 0;
     text-align: center;
     flex-direction: column;
