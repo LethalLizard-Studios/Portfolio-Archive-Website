@@ -70,6 +70,7 @@ footer{
     color: #00061a;
     font-size:3.5vh;
     font-family: monospace;
+    overflow-x: hidden;
   }
   
   .wrapper {
