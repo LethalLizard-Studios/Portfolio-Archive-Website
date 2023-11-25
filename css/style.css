@@ -64,6 +64,7 @@ footer{
     width:2em;
     height:2em;
     text-align:left;
+    z-index: 12;
 }
 
 @media all and (max-width: 700px){
