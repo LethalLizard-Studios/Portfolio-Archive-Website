@@ -68,7 +68,7 @@ footer{
   :root {
     background: black;
     color: #00061a;
-    font-size:3.5vh;
+    font-size:2em;
     font-family: monospace;
     overflow-x: hidden;
   }
