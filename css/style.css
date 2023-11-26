@@ -43,11 +43,52 @@ main {
   margin-left: -25vh;  /* Negative half of width. */
 }
 
+.pageheader {
+  flex: auto;
+  flex-flow:column;
+  z-index: 10;
+  position:fixed;
+  border: 3px solid #ffffff;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  top: 21%;
+  left: 50%;
+  width: 50vh;
+  height: 4vh;
+  margin-top: -2vh;  /* Negative half of height. */
+  margin-left: -25vh;  /* Negative half of width. */
+}
+
+
+.pages {
+  flex: auto;
+  flex-flow:column;
+  z-index: 10;
+  position:fixed;
+  border: 3px solid #ffffff;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  top: 79%;
+  left: 50%;
+  width: 50vh;
+  height: 4vh;
+  margin-top: -2vh;  /* Negative half of height. */
+  margin-left: -25vh;  /* Negative half of width. */
+}
+
 .graph {
   flex:auto;
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+p {
+  color: white;
 }
 
 header{
@@ -91,6 +132,16 @@ footer{
     width: 80vw;
     height: 80vw;
     margin-top: -40vw;  /* Negative half of height. */
+    margin-left: -40vw;  /* Negative half of width. */
+  }
+  .pageheader{
+    left: 50%;
+    width: 80vw;
+    margin-left: -40vw;  /* Negative half of width. */
+  }
+  .pages {
+    left: 50%;
+    width: 80vw;
     margin-left: -40vw;  /* Negative half of width. */
   }
 }
