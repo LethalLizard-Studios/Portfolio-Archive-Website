@@ -93,7 +93,7 @@ p {
 
 header{
     border-bottom: 3px solid white;
-    padding: 1em 0 1em 0;
+    padding: 0.5em 0 0.5em 0;
     text-align: center;
     justify-content: center;
     cursor: help;
