@@ -44,6 +44,7 @@ main {
 }
 
 .pageheader {
+  font-size: 3vh;
   flex: auto;
   flex-flow:column;
   z-index: 10;
@@ -63,6 +64,7 @@ main {
 
 
 .pages {
+  font-size: 3vh;
   flex: auto;
   flex-flow:column;
   z-index: 10;
