@@ -63,6 +63,10 @@ footer{
     border-top: 3px solid white;
     padding: 1em 0 1em 0;
     text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     flex-direction: column;
     cursor: help;
     font-size: 1.5vw;
@@ -71,7 +75,7 @@ footer{
 
 .img {
     left: 1em;
-    bottom: 1em;
+    bottom: 4em;
     position:fixed;
     justify-content: left;
     width:2em;
