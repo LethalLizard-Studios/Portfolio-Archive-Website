@@ -21,11 +21,19 @@ a:active {
     font-size: 1.5vw;
 }
 
+th {
+  color:white;
+}
+
+.hovercolor:hover {
+  color:rgb(12, 129, 224);
+}
+
 main {
     background-color: black;
 }
 
-.buttonlist {
+button {
   height: 50vh;
   background-color: rgb(0, 0, 0);
   border: 3px solid #ffffff;
