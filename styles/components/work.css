@@ -103,7 +103,11 @@
       'image7 content7'
       'content8 image8'
       'image9 content9'
-      'content10 image10';
+      'content10 image10'
+      'image11 content11'
+      'content12 image12'
+      'image13 content13'
+      'content14 image14';
     place-items: center;
   }
 
@@ -147,6 +151,22 @@
     grid-area: image10;
   }
 
+  .work__image11 {
+    grid-area: image11;
+  }
+
+  .work__image12 {
+    grid-area: image12;
+  }
+
+  .work__image13 {
+    grid-area: image13;
+  }
+
+  .work__image14 {
+    grid-area: image14;
+  }
+
   .work__content1 {
     grid-area: content1;
   }
@@ -185,6 +205,22 @@
 
   .work__content10 {
     grid-area: content10;
+  }
+
+  .work__content11 {
+    grid-area: content11;
+  }
+
+  .work__content12 {
+    grid-area: content12;
+  }
+
+  .work__content13 {
+    grid-area: content13;
+  }
+
+  .work__content14 {
+    grid-area: content14;
   }
 
   .work__project {
