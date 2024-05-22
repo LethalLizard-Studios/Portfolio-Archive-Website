@@ -136,7 +136,7 @@
   }
 
   .hero__btn {
-    font-size: var(--size-2xl);
+    font-size: var(--size-xl);
   }
 }
 
