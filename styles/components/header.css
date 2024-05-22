@@ -8,6 +8,17 @@
   z-index: 9999;
 }
 
+.img {
+  left: 2rem;
+  bottom: 2rem;
+  position:fixed;
+  justify-content: left;
+  width: var(--size-4xl);
+  height: var(--size-4xl);
+  text-align:left;
+  z-index: 12;
+}
+
 .header__menu {
   display: none;
 }
