@@ -14,6 +14,12 @@
   margin: 1rem auto;
 }
 
+.work__wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .work__project-title {
   font-size: var(--size-base);
   margin-bottom: 1rem;
