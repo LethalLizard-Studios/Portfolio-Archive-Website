@@ -29,11 +29,6 @@
   position: relative;
 }
 
-.img {
-  max-width: 50%;
-  max-height: 50%
-}
-
 .work__img-wrapper::after {
   content: '';
   width: 100%;
