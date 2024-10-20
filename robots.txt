@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow:
+
+Sitemap: https://www.lethallizard.studio/sitemap_index.xml
