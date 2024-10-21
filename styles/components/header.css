@@ -9,23 +9,8 @@
 }
 
 .social__img {
-  left: 2rem;
-  bottom: 2rem;
   position:fixed;
   justify-content: left;
-  width: 4rem;
-  height: 4rem;
-  text-align:left;
-  z-index: 12;
-}
-
-.img {
-  left: 2rem;
-  bottom: 2rem;
-  position:fixed;
-  justify-content: left;
-  width: var(--size-4xl);
-  height: var(--size-4xl);
   text-align:left;
   z-index: 12;
 }
@@ -49,6 +34,13 @@
 
 /* md */
 @media (min-width: 768px) {
+  .social__img {
+    left: 1rem;
+    bottom: 1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  
   .header__menu {
     display: flex;
     align-items: center;
@@ -93,6 +85,13 @@
 
 /* lg */
 @media (min-width: 1024px) {
+  .social__img {
+    left: 2rem;
+    bottom: 2rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  
   .header__link {
     font-size: var(--size-xl);
   }
