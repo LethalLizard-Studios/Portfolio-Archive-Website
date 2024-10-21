@@ -10,13 +10,21 @@
 
 .social__img {
   left: 1rem;
-  bottom: 1rem;
+  bottom: 2rem;
   width: 2rem;
   height: 2rem;
   position:fixed;
   justify-content: left;
   text-align:left;
   z-index: 12;
+}
+
+.social__middle {
+  bottom: 6em;
+}
+
+.social__top {
+  bottom: 10em;
 }
 
 .header__menu {
