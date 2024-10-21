@@ -53,6 +53,14 @@
     height: 4rem;
   }
   
+  .social__middle {
+  bottom: 6rem;
+  }
+
+  .social__top {
+  bottom: 10rem;
+  }
+  
   .header__menu {
     display: flex;
     align-items: center;
@@ -102,6 +110,14 @@
     bottom: 2rem;
     width: 4rem;
     height: 4rem;
+  }
+  
+  .social__middle {
+  bottom: 6rem;
+  }
+
+  .social__top {
+  bottom: 10rem;
   }
   
   .header__link {
