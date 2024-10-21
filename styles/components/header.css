@@ -9,8 +9,8 @@
 }
 
 .social__img {
-  left: 2rem;
-  bottom: 2rem;
+  left: 1rem;
+  bottom: 1rem;
   width: 2rem;
   height: 2rem;
   position:fixed;
@@ -41,8 +41,8 @@
   .social__img {
     left: 2rem;
     bottom: 2rem;
-    width: 2rem;
-    height: 2rem;
+    width: 4rem;
+    height: 4rem;
   }
   
   .header__menu {
