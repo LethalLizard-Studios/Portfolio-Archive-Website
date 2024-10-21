@@ -8,6 +8,17 @@
   z-index: 9999;
 }
 
+.social__img {
+  left: 2rem;
+  bottom: 2rem;
+  position:fixed;
+  justify-content: left;
+  width: 5rem;
+  height: 5rem;
+  text-align:left;
+  z-index: 12;
+}
+
 .img {
   left: 2rem;
   bottom: 2rem;
