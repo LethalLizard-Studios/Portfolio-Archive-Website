@@ -9,6 +9,10 @@
 }
 
 .social__img {
+  left: 2rem;
+  bottom: 2rem;
+  width: 4rem;
+  height: 4rem;
   position:fixed;
   justify-content: left;
   text-align:left;
