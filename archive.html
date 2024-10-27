@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/lls_logo_vector.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=chillax@400,500,600,700&display=swap" rel="stylesheet">
+    <meta name="description" content="Leland Carter is an award-winning Indie Developer in Halifax. Check out SANCTION on Steam and his Project Archive. Contract work is available upon request."/>
+    <title>Leland Carter's | Archive</title>
+  </head>
+  <body>
+    <header class="header container">
+      <a href="https://www.github.com/LethalLizard-Studios"><img class="social__img" style="z-index: 20; " src="github.png" alt="Github Link"></a>
+      <a href="https://www.linkedin.com/in/leland-carter/"><img class="social__img social__middle" style="z-index: 20;" src="linkedin.png" alt="LinkedIn Link"></a>
+      <a href="https://www.x.com/LelandCDev"><img class="social__img social__top" style="z-index: 20;" src="twitter.png" alt="X (Twitter) Link"></a>
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <a class="header__link" href="#featured">Work</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li>
+            <a class="header__resume btn" href="https://docs.google.com/document/d/142BTftD19C8h21DLA4oGCv8251MVNwoXi_9vw06PF98/edit?usp=sharing">View Resume/CV</a>
+          </li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="header__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+        <button aria-label="mobile nav button" class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="mobile-nav__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="https://docs.google.com/document/d/142BTftD19C8h21DLA4oGCv8251MVNwoXi_9vw06PF98/edit?usp=sharing">Resume/CV</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End of Mobile Navigation -->
+    <main>
+      <section class="home container">
+        
+      </section>
+      <section id="featured" class="featured container section">
+        <div class="featured__wrapper">
+          <h2 class="featured__title">SANCTION</h2>
+          <a
+            aria-label="link featured projects"
+            class="featured__link"
+            href="https://store.steampowered.com/app/1191080/SANCTION/"
+            alt="Steam Store"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+              />
+            </svg>
+          </a>
+        </div>
+        <h3 class="featured__subtitle">GDA Indie Showcase Spotlight Winner </h3>
+        <br>
+        <a
+          class="btn work__project-btn"
+          href="https://store.steampowered.com/app/1191080/SANCTION/"
+          alt="Steam Store"
+        >Purchase on Steam</a>
+        <p class="featured__description">
+          SANCTION is a procedurally generated post-apocalyptic world where you are a prisoner sanctioned to come from the safety of your doomsday bunker to gather supplies for the community. Your freedom and your communities livelihood relies on you. Survive the desolate wasteland left by the final war.
+        </p>
+        <div class="featured__info-container">
+          <div>
+            <h3 class="featured__label">Language</h3>
+            <p class="featured__info">C# .NET</p>
+          </div>
+          <div>
+            <h3 class="featured__label">Project type</h3>
+            <p class="featured__info">Video Game</p>
+          </div>
+          <div>
+            <h3 class="featured__label">Release Date</h3>
+            <p class="featured__info">2025</p>
+          </div>
+        </div>
+        <div class="featured__img-container">
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/1920x968"
+              data-src="/Screenshot_0.jpg"
+              alt="SANCTION Gameplay Screenshot 1"
+              style="border-radius: 24px;"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/1920x968"
+              data-src="/Screenshot_2.jpg"
+              alt="SANCTION Gameplay Screenshot 2"
+              style="border-radius: 24px;"
+            />
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer container section">
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
