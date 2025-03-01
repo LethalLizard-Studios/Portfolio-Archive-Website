@@ -1,5 +1,26 @@
 // Project data store - you can move this to a separate JSON file later
 const projectsData = {
+    "sanction": {
+        title: "SANCTION",
+        subtitle: "GDA Indie Showcase Spotlight Winner",
+        mainLink: "https://store.steampowered.com/app/1191080/SANCTION/",
+        description: "SANCTION is a procedurally generated post-apocalyptic world where you are a prisoner sanctioned to come from the safety of your doomsday bunker to gather supplies for the community. Your freedom and your communities livelihood relies on you. Survive the desolate wasteland left by the final war.",
+        technology: "C# .NET",
+        type: "Video Game",
+        date: "2025 (Release)",
+        buttons: [
+          { text: "Purchase on Steam", url: "https://store.steampowered.com/app/1191080/SANCTION/" }
+        ],
+        stats: [
+          { value: "100,000+", label: "Lines of Code" },
+          { value: "Award", label: "Winning" },
+          { value: "Procedural", label: "Generation" }
+        ],
+        images: [
+          { src: "/Screenshot_0.jpg", alt: "SANCTION Gameplay Screenshot 1" },
+          { src: "/Screenshot_2.jpg", alt: "SANCTION Gameplay Screenshot 2" }
+        ]
+      },
   "multiplayer-rts": {
     title: "Unnamed Multiplayer RTS",
     subtitle: "Real-Time Strategy Game",
@@ -205,22 +226,19 @@ const projectsData = {
       { src: "/mini-golf-vr.jpg", alt: "Mini-Golf VR Screenshot" }
     ]
   },
-  "cavern-craze": {
-    title: "Cavern Craze VR",
-    subtitle: "Virtual Reality Cave Explorer",
-    description: "A VR cave exploration game where players navigate through procedurally generated cave systems, solving puzzles and avoiding dangers.",
+  "sanction-2050": {
+    title: "Sanction 2050",
+    subtitle: "Co-op FPS",
+    description: "",
     technology: "C#, Unity Built-In",
-    type: "VR Game",
-    date: "2019",
+    type: "Video Game",
+    date: "2020",
     buttons: [
-      { text: "Download", url: "https://lelandcarter-archive.itch.io/cavern-craze-vr" }
     ],
     stats: [
-      { value: "Procedural", label: "Cave Generation" },
-      { value: "VR", label: "Platform" }
     ],
     images: [
-      { src: "/cavern-craze.jpg", alt: "Cavern Craze VR Screenshot" }
+      { src: "/tactical-shooter.jpg", alt: "Tactical Shooter Screenshot" }
     ]
   },
   "tactical-shooter": {
@@ -240,6 +258,39 @@ const projectsData = {
     ],
     images: [
       { src: "/tactical-shooter.jpg", alt: "Tactical Shooter Screenshot" }
+    ]
+  },
+  "contention-vr": {
+    title: "Contention VR: Battle Royale",
+    subtitle: "VR Battle Royale",
+    description: "",
+    technology: "C#, Unity Built-In",
+    type: "Video Game",
+    date: "2019",
+    buttons: [
+    ],
+    stats: [
+    ],
+    images: [
+      { src: "/tactical-shooter.jpg", alt: "Tactical Shooter Screenshot" }
+    ]
+  },
+  "cavern-craze": {
+    title: "Cavern Craze VR",
+    subtitle: "Virtual Reality Cave Explorer",
+    description: "A VR cave exploration game where players navigate through procedurally generated cave systems, solving puzzles and avoiding dangers.",
+    technology: "C#, Unity Built-In",
+    type: "VR Game",
+    date: "2019",
+    buttons: [
+      { text: "Download", url: "https://lelandcarter-archive.itch.io/cavern-craze-vr" }
+    ],
+    stats: [
+      { value: "Procedural", label: "Cave Generation" },
+      { value: "VR", label: "Platform" }
+    ],
+    images: [
+      { src: "/cavern-craze.jpg", alt: "Cavern Craze VR Screenshot" }
     ]
   },
   "slimeyquest-original": {
@@ -262,25 +313,50 @@ const projectsData = {
       { src: "/slimeyquest.jpg", alt: "SlimeyQuest Original Screenshot" }
     ]
   },
-  "sanction": {
-    title: "SANCTION",
-    subtitle: "GDA Indie Showcase Spotlight Winner",
-    mainLink: "https://store.steampowered.com/app/1191080/SANCTION/",
-    description: "SANCTION is a procedurally generated post-apocalyptic world where you are a prisoner sanctioned to come from the safety of your doomsday bunker to gather supplies for the community. Your freedom and your communities livelihood relies on you. Survive the desolate wasteland left by the final war.",
-    technology: "C# .NET",
+  "slimeyquest-original": {
+    title: "SlimeyQuest Original",
+    subtitle: "2D Sandbox Game",
+    description: "The original SlimeyQuest game, a 2D Sandbox where players can build various machines and mine for resources. The ultimate goal is to build a rocket and create a space station.",
+    technology: "GML, GameMaker Studio",
     type: "Video Game",
-    date: "2025 (Release)",
+    date: "2013",
     buttons: [
-      { text: "Purchase on Steam", url: "https://store.steampowered.com/app/1191080/SANCTION/" }
+      { text: "Play Now", url: "https://www.lelandcarter-archive.itch.io/slimeyquest-og" },
+      { text: "Watch Video", url: "https://www.youtube.com/watch?v=1xuoPtVl_XA" },
+      { text: "Watch Trailer", url: "https://www.youtube.com/watch?v=w3Wv1KOzS2g" },
+      { text: "Original Website", url: "https://nuketimegames.wixsite.com/slimeyquest" },
+      { text: "Deprecated Download", url: "http://www.mediafire.com/download/4q5a6a5bzj997a8/SlimeyQuest.exe"}
     ],
     stats: [
-      { value: "100,000+", label: "Lines of Code" },
-      { value: "Award", label: "Winning" },
-      { value: "Procedural", label: "Generation" }
+      { value: "First Released Game", label: "Milestone" },
+      { value: "2D", label: "Perspective" },
+      { value: "Lost Media", label: "Status" }
     ],
     images: [
-      { src: "/Screenshot_0.jpg", alt: "SANCTION Gameplay Screenshot 1" },
-      { src: "/Screenshot_2.jpg", alt: "SANCTION Gameplay Screenshot 2" }
+      { src: "/slimeyquest.jpg", alt: "SlimeyQuest Original Screenshot" },
+      { src: "/slimeyquest-1.jpg", alt: "SlimeyQuest Original Screenshot" },
+      { src: "/slimeyquest-web-1.png", alt: "SlimeyQuest Website Screenshot" },
+      { src: "/slimeyquest-web-2.png", alt: "SlimeyQuest Website Screenshot" },
+      { src: "/slimeyquest-web-3.png", alt: "SlimeyQuest Website Screenshot" },
+      { src: "/slimeyquest-web-4.png", alt: "SlimeyQuest Website Screenshot" }
+    ]
+  },
+  "slimey-jump": {
+    title: "Slimey Jump",
+    subtitle: "2-Player 2D Platformer",
+    description: "With the same player sprite as SlimeyQuest Original this game was a 2-player jumping puzzle where a the player with a slime color of there chosing would race to the end of the level.",
+    technology: "GML, GameMaker Studio",
+    type: "Video Game",
+    date: "2012",
+    buttons: [
+    ],
+    stats: [
+      { value: "First Full Game", label: "Milestone" },
+      { value: "2D", label: "Perspective" },
+      { value: "Lost Media", label: "Status" }
+    ],
+    images: [
+      { src: "/slimeyquest.jpg", alt: "SlimeyQuest Gameplay Screenshot" }
     ]
   }
 };

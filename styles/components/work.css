@@ -70,6 +70,8 @@
 
 .work__project-btn {
   font-size: var(--size-sm);
+  margin-left: 1rem;
+  white-space: nowrap;
 }
 
 .work__project-subtitle {
@@ -286,6 +288,7 @@
 
   .work__project-btn {
     font-size: var(--size-sm);
+    margin-left: 1.5rem;
   }
 
   .work__project-subtitle {
@@ -357,5 +360,146 @@
 @media (min-width: 1536px) {
   .work__container {
     width: 70%;
+  }
+}
+
+/* Add these new styles for the list layout */
+.work__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.work__item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--clr-slate600);
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.work__img-wrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-right: 1.5rem;
+}
+
+.work__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.work__project-subtitle {
+  display: block;
+  font-size: var(--size-base);
+  margin: 0;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.work__project-btn {
+  margin-left: auto;
+}
+
+.work__container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+/* Media queries for responsive adjustments */
+@media (min-width: 640px) {
+  .work__item {
+    padding: 1.5rem;
+  }
+  
+  .work__img-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .work__project-subtitle {
+    font-size: var(--size-lg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .work__list {
+    width: 90%;
+  }
+  
+  .work__item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .work__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: 1280px) {
+  .work__list {
+    width: 80%;
+  }
+}
+
+/* Add these styles for the project info */
+.work__project-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: left;
+  margin-right: 1rem;
+}
+
+.work__project-subtext {
+  font-size: var(--size-sm);
+  color: var(--clr-slate400);
+  margin: 0.25rem 0;
+}
+
+.work__project-date {
+  font-size: var(--size-xs);
+  color: var(--clr-slate600);
+  margin: 0;
+}
+
+/* Media query adjustments */
+@media (min-width: 640px) {
+  .work__project-subtitle {
+    font-size: var(--size-lg);
+  }
+  
+  .work__project-subtext {
+    font-size: var(--size-base);
+  }
+  
+  .work__project-date {
+    font-size: var(--size-sm);
+  }
+}
+
+/* Add spacing between buttons on project page */
+.project-buttons .btn {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+/* Add a bit more space on larger screens */
+@media (min-width: 768px) {
+  .project-buttons .btn {
+    margin-right: 0.5rem;
   }
 }
