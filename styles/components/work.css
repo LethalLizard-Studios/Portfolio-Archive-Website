@@ -26,10 +26,18 @@
 }
 
 .work__img-wrapper {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .work__img {
+  width: 75%;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
   padding: 0px 0px;
   border-radius: 15%;
 }
