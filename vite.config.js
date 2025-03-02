@@ -25,7 +25,6 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         sanction: resolve(__dirname, 'sanction.html'),
-        contact: resolve(__dirname, 'contact.html'),
         portfolio: resolve(__dirname, 'portfolio.html'),
         project: resolve(__dirname, 'project.html'),
         // Add any other HTML pages you have here
