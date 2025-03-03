@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/lls_logo_vector.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Shop golf simulator technologies and products, all made in Canada." />
+  <meta name="keywords" content="Golf, golf sim, simulator, control box, golf simulator control box" />
+  <title>Golf Products</title>
+  <style>
+    :root {
+      --clr-background: #000000;
+      --clr-text: #ffffff;
+      --clr-accent: #3f0f63;
+      --clr-secondary: #333333;
+      --clr-highlight: #421766;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--clr-background);
+      color: var(--clr-text);
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      box-sizing: border-box;
+    }
+    
+    /* Header and Navigation */
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      position: relative;
+      z-index: 10;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0) 100%);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+    }
+    
+    .logo {
+      height: 60px;
+    }
+    
+    .nav__menu {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 1000px;
+    }
+    
+    .nav__link {
+      color: var(--clr-text);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+      text-align: center;
+      display: block;
+    }
+    
+    .nav__menu li {
+      flex: 1;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .btn {
+      background-color: var(--clr-accent);
+      color: var(--clr-text);
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+    
+    .btn:hover {
+      background-color: var(--clr-highlight);
+    }
+    
+    /* Hero Section */
+    .hero {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-image: url('/sanction-screenshot.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, 
+        rgba(0, 0, 0, 0.5) 0%, 
+        rgba(0, 0, 0, 0.6) 50%, 
+        rgba(0, 0, 0, 0.9) 85%, 
+        rgba(0, 0, 0, 1) 100%);
+    }
+    
+    .hero__content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      padding-top: 5rem;
+    }
+    
+    .hero__title {
+      font-size: clamp(3rem, 8vw, 6rem);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    
+    .hero__subtitle {
+      font-size: clamp(1.2rem, 3vw, 2rem);
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+    
+    .hero__logo {
+      max-width: 80%;
+      height: auto;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+    
+    /* Features Section */
+    .features {
+      padding: 16rem 0;
+      margin-bottom: 4rem;
+    }
+    
+    .section__title {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 3rem;
+      margin-top: 12rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .features__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .feature {
+      background-color: var(--clr-secondary);
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+    
+    .feature__icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: var(--clr-accent);
+    }
+    
+    .feature__title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .feature__description {
+      opacity: 0.9;
+      line-height: 1.6;
+    }
+    
+    /* Screenshots Section */
+    .screenshots {
+      padding: 8rem 0;
+      margin-bottom: 4rem;
+    }
+    
+    .screenshots__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 1.5rem;
+    }
+    
+    .screenshot {
+      overflow: hidden;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    
+    .screenshot:hover {
+      transform: scale(1.03);
+    }
+    
+    .screenshot img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    /* About Section */
+    .about {
+      padding: 8rem 0;
+      margin-bottom: 4rem;
+    }
+    
+    .about__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    
+    .about__text {
+      line-height: 1.8;
+    }
+    
+    .about__image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      max-width: 50%;
+      margin: 0 auto;
+      display: block;
+    }
+    
+    /* Footer */
+    .footer {
+      background-color: var(--clr-secondary);
+      padding: 3rem 0;
+      text-align: center;
+    }
+    
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .social-link {
+      color: var(--clr-text);
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+      text-decoration: none;
+    }
+    
+    .social-link:hover {
+      color: var(--clr-accent);
+    }
+    
+    .footer__text {
+      opacity: 0.7;
+    }
+    
+    /* Mobile Navigation */
+    .mobile-nav-toggle {
+      position: absolute;
+      right: 2rem;
+      background: none;
+      border: none;
+      color: var(--clr-text);
+      font-size: 1.8rem;
+      cursor: pointer;
+      padding: 0.5rem;
+      z-index: 20;
+      display: none;
+    }
+    
+    /* Media Queries for Responsive Padding */
+    @media (min-width: 640px) {
+      .container {
+        padding: 0 3rem;
+      }
+      
+      .header {
+        padding: 1.5rem 3rem;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .container {
+        padding: 0 4rem;
+      }
+      
+      .header {
+        padding: 1.5rem 4rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .mobile-nav-toggle {
+        display: block;
+      }
+      
+      .nav__menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 70%;
+        background-color: var(--clr-secondary);
+        flex-direction: column;
+        padding: 5rem 2rem;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+      }
+      
+      .nav__menu.active {
+        transform: translateX(0);
+      }
+      
+      .about__content {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+          <ul class="nav__menu">
+
+          </ul>
+        </nav>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">☰</button>
+      </header>
+    <div id="my-store-113463252"></div>
+    <div>
+    <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?113463252&data_platform=code&data_date=2025-03-03" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-113463252");</script>
+    </div>
+</body>
+</html> 
