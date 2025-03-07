@@ -27,6 +27,7 @@ export default defineConfig({
         sanction: resolve(__dirname, 'sanction.html'),
         portfolio: resolve(__dirname, 'portfolio.html'),
         project: resolve(__dirname, 'project.html'),
+        golf: resolve(__dirname, 'golf.html'),
         // Add any other HTML pages you have here
       }
     }
