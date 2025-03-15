@@ -29,6 +29,8 @@ export default defineConfig({
         project: resolve(__dirname, 'project.html'),
         golf: resolve(__dirname, 'golf.html'),
         controlboxhelp: resolve(__dirname, 'controlbox-help.html'),
+        controlboxdownload: resolve(__dirname, 'controlbox-download.html'),
+        controlboxsetup: resolve(__dirname, 'controlbox-setup.html'),
         // Add any other HTML pages you have here
       }
     }
