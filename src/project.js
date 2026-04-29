@@ -428,30 +428,29 @@ function loadProjectData(project) {
   // Add stats if available
   const statsContainer = document.getElementById('project-stats');
   if (project.stats && project.stats.length > 0) {
-    // Clear any existing content
     statsContainer.innerHTML = '';
-    
-    // Create a container similar to featured__info-container
-    const statsInfoContainer = document.createElement('div');
-    statsInfoContainer.className = 'featured__info-container';
-    
+
+    const statsGrid = document.createElement('div');
+    statsGrid.className = 'stats-grid';
+
     project.stats.forEach(stat => {
-      const statDiv = document.createElement('div');
-      
-      const statLabel = document.createElement('h3');
-      statLabel.className = 'featured__label';
-      statLabel.textContent = stat.label;
-      
+      const statItem = document.createElement('div');
+      statItem.className = 'stat-item';
+
       const statValue = document.createElement('p');
-      statValue.className = 'featured__info';
+      statValue.className = 'stat-value';
       statValue.textContent = stat.value;
-      
-      statDiv.appendChild(statLabel);
-      statDiv.appendChild(statValue);
-      statsInfoContainer.appendChild(statDiv);
+
+      const statLabel = document.createElement('p');
+      statLabel.className = 'stat-label';
+      statLabel.textContent = stat.label;
+
+      statItem.appendChild(statValue);
+      statItem.appendChild(statLabel);
+      statsGrid.appendChild(statItem);
     });
-    
-    statsContainer.appendChild(statsInfoContainer);
+
+    statsContainer.appendChild(statsGrid);
   } else {
     statsContainer.style.display = 'none';
   }
@@ -468,7 +467,6 @@ function loadProjectData(project) {
       img.src = 'https://via.placeholder.com/1920x968';
       img.dataset.src = image.src;
       img.alt = image.alt;
-      img.style.borderRadius = '24px';
       
       imgWrapper.appendChild(img);
       imagesContainer.appendChild(imgWrapper);

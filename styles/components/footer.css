@@ -1,7 +1,13 @@
+.footer {
+  border-top: 1px solid var(--clr-card-border);
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
 .footer__title {
   font-size: var(--size-xs);
   font-weight: 400;
-  color: var(--clr-slate600);
+  color: var(--clr-slate800);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;

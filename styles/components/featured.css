@@ -1,8 +1,9 @@
 .featured__subtitle {
   font-size: var(--size-sm);
-  color: var(--clr-indigo);
-  text-transform: capitalize;
-  font-weight: 400;
+  color: var(--clr-rose);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
 }
 
 .featured__wrapper {
@@ -13,37 +14,69 @@
 
 .featured__title {
   font-size: var(--size-2xl);
-  color: var(--clr-light);
+  background: linear-gradient(90deg, var(--clr-slate400) 0%, var(--clr-indigo) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   text-transform: uppercase;
 }
 
 .featured__link {
   width: var(--size-2xl);
   height: var(--size-2xl);
+  color: var(--clr-rose);
+  transition: transform 0.3s, filter 0.3s;
+  flex-shrink: 0;
+}
+
+.featured__link:hover {
+  transform: scale(1.1) rotate(-5deg);
+  filter: drop-shadow(0 0 8px var(--clr-glow-strong));
 }
 
 .featured__description {
-  max-width: 60ch;
+  max-width: 70ch;
   color: var(--clr-slate600);
   font-size: var(--size-sm);
   margin: 1rem 0;
+  line-height: 1.7;
 }
 
+/* Glassmorphism info card */
 .featured__info-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  background: var(--clr-card);
+  border: 1px solid var(--clr-card-border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.05);
 }
 
 .featured__info-container div {
   flex: 1;
-  min-width: 250px;
+  min-width: 180px;
+  position: relative;
+}
+
+.featured__info-container div:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -0.5rem;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--clr-card-border);
 }
 
 .featured__label {
-  font-size: var(--size-base);
-  text-transform: capitalize;
-  margin-bottom: 0.25em;
+  font-size: var(--size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--clr-rose);
+  font-weight: 600;
+  margin-bottom: 0.35em;
 }
 
 .featured__tech-stack {
@@ -58,7 +91,7 @@
 }
 
 .featured__img-container {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
@@ -66,6 +99,33 @@
 
 .featured__img-wrapper {
   position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--clr-card-border);
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.06);
+  transition: box-shadow 0.4s;
+}
+
+.featured__img-wrapper:hover {
+  box-shadow: 0 0 40px rgba(34, 197, 94, 0.15);
+}
+
+.featured__img-wrapper img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+  border-radius: 16px;
+}
+
+.featured__img-wrapper:hover img {
+  transform: scale(1.03);
+}
+
+.featured__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.25rem 0;
 }
 
 /* xs */
@@ -89,7 +149,7 @@
   }
 
   .featured__label {
-    font-size: var(--size-lg);
+    font-size: var(--size-sm);
   }
 
   .featured__info {
@@ -108,9 +168,6 @@
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
 }
-
-/* md */
-/* @media (min-width: 768px) {} */
 
 /* lg */
 @media (min-width: 1024px) {
@@ -132,7 +189,7 @@
   }
 
   .featured__label {
-    font-size: var(--size-xl);
+    font-size: var(--size-base);
   }
 
   .featured__info {
@@ -161,7 +218,7 @@
   }
 
   .featured__label {
-    font-size: var(--size-2xl);
+    font-size: var(--size-lg);
   }
 
   .featured__info {
@@ -173,6 +230,3 @@
     grid-gap: 2rem;
   }
 }
-
-/* 2xl */
-/* @media (min-width: 1536px) {} */
