@@ -3,7 +3,7 @@
   --clr-light: #e2fce8;
   --clr-slate400: #dcfce7;
   --clr-slate600: #a7f3c0;
-  --clr-slate800: #1a3320;
+  --clr-slate800: #2d5a3d;
   --clr-rose: #22c55e;
   --clr-indigo: #4ade80;
   --clr-card: #0a130a;
@@ -36,20 +36,6 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-.light-mode {
-  --clr-dark: #f0fdf4;
-  --clr-light: #14532d;
-  --clr-slate400: #15803d;
-  --clr-slate600: #166534;
-  --clr-slate800: #bbf7d0;
-  --clr-rose: #16a34a;
-  --clr-indigo: #15803d;
-  --clr-card: #dcfce7;
-  --clr-card-border: #86efac;
-  --clr-glow: rgba(22, 163, 74, 0.15);
-  --clr-glow-strong: rgba(22, 163, 74, 0.3);
 }
 
 body {
@@ -89,6 +75,29 @@ strong {
   color: var(--clr-indigo);
 }
 
+/* Section eyebrow label */
+.section__eyebrow {
+  font-size: var(--size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--clr-rose);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.section__eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 1.5rem;
+  height: 2px;
+  background: var(--clr-rose);
+  border-radius: 1px;
+  box-shadow: 0 0 6px var(--clr-glow);
+}
+
 /* Scrollbar */
 body::-webkit-scrollbar {
   width: 6px;
@@ -104,22 +113,11 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0 0 8px var(--clr-glow-strong);
 }
 
-/* Scroll reveal animation */
-@keyframes revealUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+/* Scroll reveal */
 .reveal {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
 }
 
 .reveal.visible {

@@ -31,26 +31,13 @@
       <a href="https://www.x.com/LelandCDev"><img class="social__img social__top" style="z-index: 20;" src="twitter.png" alt="X (Twitter) Link"></a>
       <nav>
         <ul class="header__menu">
-          <li>
-            <a class="header__link" href="#about">About</a>
-          </li>
+          <li><a class="header__link" href="#about">About</a></li>
           <li class="header__line"></li>
-          <li>
-            <a class="header__link" href="#featured">Work</a>
-          </li>
+          <li><a class="header__link" href="#featured">Work</a></li>
           <li class="header__line"></li>
-          <li>
-            <a class="header__link" href="#contact">Contact</a>
-          </li>
+          <li><a class="header__link" href="#contact">Contact</a></li>
           <li>
             <a class="header__resume btn" href="https://docs.google.com/document/d/1bEVAJwmYOdqDWNtxLUO26nXrPvjhfAwgzkE1Itt6Q6w/edit?usp=sharing">View Resume/CV</a>
-          </li>
-          <li>
-            <button aria-label="theme-toggle btn" id="theme-toggle" class="header__sun">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
-              </svg>
-            </button>
           </li>
         </ul>
         <button aria-label="mobile nav button" class="header__bars">
@@ -70,13 +57,6 @@
           <li><a class="mobile-nav__link" href="#contact">Contact</a></li>
           <li class="mobile-nav__link-line"></li>
           <li>
-            <button aria-label="theme-toggle btn" id="theme-toggle" class="mobile-nav__sun">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
-              </svg>
-            </button>
-          </li>
-          <li>
             <a class="mobile-nav__btn btn" href="https://docs.google.com/document/d/1bEVAJwmYOdqDWNtxLUO26nXrPvjhfAwgzkE1Itt6Q6w/edit?usp=sharing">Resume/CV</a>
           </li>
         </ul>
@@ -85,64 +65,60 @@
     <!-- End of Mobile Navigation -->
 
     <main>
-      <section class="home container"></section>
-
-      <!-- Hero -->
+      <!-- Hero: two-column on desktop -->
       <section class="hero container reveal">
-        <img class="hero__img" src="/hero.jpg" alt="Profile picture" />
-        <h2 class="hero__subtitle">Hello, I'm Leland Carter</h2>
-        <h1 class="hero__title">DIGITAL<br>PORTFOLIO</h1>
-        <p class="hero__description">
-          A passionate <strong>Game Developer / Software Engineer</strong> and advocate for great <strong>UI/UX</strong>.
-          I love the gaming industry but tackle all kinds of projects.
-        </p>
-        <p class="hero__description">
-          Currently open to contract or full-time work.
-        </p>
-        <a class="hero__btn btn" href="#contact">Contact Me</a>
+        <div class="hero__content">
+          <p class="hero__eyebrow">Hello, I'm Leland Carter</p>
+          <h1 class="hero__title">DIGITAL<br>PORTFOLIO</h1>
+          <p class="hero__description">
+            A passionate <strong>Game Developer / Software Engineer</strong> and advocate for great <strong>UI/UX</strong>.
+            I love the gaming industry but tackle all kinds of projects.
+          </p>
+          <p class="hero__description">Currently open to contract or full-time work.</p>
+          <a class="hero__btn btn" href="#contact">Contact Me</a>
+        </div>
+        <div class="hero__visual">
+          <img class="hero__img" src="/hero.jpg" alt="Profile picture" />
+        </div>
       </section>
 
       <!-- About Me -->
       <section id="about" class="about container section reveal">
         <div class="about__content">
+          <p class="section__eyebrow">01 — About</p>
           <h2 class="about__title">About Me</h2>
           <p class="about__description">
             Hello! I'm Leland, an <strong>Indie Game Developer</strong> based in Halifax.
             Almost every day for the past 12+ years I have worked on some sort of programming project.
-            Most of my spare time goes into game development, but I am skilled with many tools
-            and languages across the broader Computer Science industry.
+            Most of my spare time goes into game development, but I am skilled across the broader
+            Computer Science industry.
           </p>
           <p class="about__description">
             Some may say I have an addiction to coding — I just love learning new languages,
-            tools and technologies to sharpen my skills.
+            tools and technologies to sharpen my craft.
           </p>
           <hr class="about__hr" />
           <h3 class="about__subtitle">Core Technologies</h3>
-          <div class="about__ul-container">
-            <ul class="about__ul">
-              <li class="about__list">Unity HDRP, URP</li>
-              <li class="about__list">JavaFX</li>
-              <li class="about__list">Android Studio</li>
-            </ul>
-            <ul class="about__ul">
-              <li class="about__list">React Native</li>
-              <li class="about__list">OpenGL, FreeGLUT</li>
-              <li class="about__list">.NET</li>
-            </ul>
+          <div class="about__tags">
+            <span class="about__list">Unity HDRP / URP</span>
+            <span class="about__list">JavaFX</span>
+            <span class="about__list">Android Studio</span>
+            <span class="about__list">React Native</span>
+            <span class="about__list">OpenGL / FreeGLUT</span>
+            <span class="about__list">.NET</span>
           </div>
           <hr class="about__hr" />
           <h3 class="about__subtitle">Programming Languages</h3>
-          <div class="about__ul-container">
-            <ul class="about__ul">
-              <li class="about__list">C#, C, C++</li>
-              <li class="about__list">Java, Kotlin</li>
-              <li class="about__list">Python</li>
-            </ul>
-            <ul class="about__ul">
-              <li class="about__list">HTML, CSS</li>
-              <li class="about__list">JavaScript</li>
-              <li class="about__list">Haskell</li>
-            </ul>
+          <div class="about__tags">
+            <span class="about__list">C#</span>
+            <span class="about__list">C</span>
+            <span class="about__list">C++</span>
+            <span class="about__list">Java</span>
+            <span class="about__list">Kotlin</span>
+            <span class="about__list">Python</span>
+            <span class="about__list">HTML / CSS</span>
+            <span class="about__list">JavaScript</span>
+            <span class="about__list">Haskell</span>
           </div>
         </div>
         <div class="about__img-wrapper">
@@ -160,15 +136,15 @@
       <!-- Education -->
       <section id="education" class="about container section reveal">
         <div class="about__content">
+          <p class="section__eyebrow">02 — Education</p>
           <h2 class="about__title">Education</h2>
           <p class="about__description">
-            During my time at Dalhousie University I picked up many useful skills — from Privacy and Network Security
-            to Software Engineering and Operating Systems, I explored the opportunities that came with each.
+            During my time at Dalhousie University I picked up many useful skills — from Privacy and
+            Network Security to Software Engineering and Operating Systems.
           </p>
           <p class="about__description">
-            Learning algorithms and advanced math concepts showed me a different side of programming,
-            one focused on optimization and time complexity. My professors taught me that programming is
-            more than a single solution — it's a form of art unique to each programmer.
+            Learning algorithms and advanced math showed me that programming is more than a single
+            solution — it's a form of art unique to each programmer.
           </p>
           <hr class="about__hr" />
           <div class="featured__info-container">
@@ -193,6 +169,7 @@
 
       <!-- Featured: SANCTION -->
       <section id="featured" class="featured container section reveal">
+        <p class="section__eyebrow">03 — Featured Project</p>
         <div class="featured__wrapper">
           <h2 class="featured__title">SANCTION</h2>
           <a aria-label="link to SANCTION on Steam" class="featured__link" href="https://store.steampowered.com/app/1191080/SANCTION/" target="_blank">
@@ -202,14 +179,10 @@
           </a>
         </div>
         <h3 class="featured__subtitle">GDA Indie Showcase Spotlight Winner</h3>
-        <div class="featured__buttons">
-          <a class="btn" href="https://store.steampowered.com/app/1191080/SANCTION/" target="_blank">Purchase on Steam</a>
-          <a class="btn" href="/sanction.html">Official Website</a>
-        </div>
         <p class="featured__description">
-          SANCTION is a procedurally generated post-apocalyptic world where you are a prisoner sanctioned to leave
-          the safety of your doomsday bunker to gather supplies for your community. Your freedom and your community's
-          livelihood relies on you. Survive the desolate wasteland left by the final war.
+          SANCTION is a procedurally generated post-apocalyptic world where you are a prisoner sanctioned
+          to leave the safety of your doomsday bunker to gather supplies for your community. Your freedom
+          and your community's livelihood relies on you. Survive the desolate wasteland left by the final war.
         </p>
         <div class="featured__info-container">
           <div>
@@ -225,6 +198,10 @@
             <p class="featured__info">2025</p>
           </div>
         </div>
+        <div class="featured__buttons">
+          <a class="btn" href="https://store.steampowered.com/app/1191080/SANCTION/" target="_blank">Purchase on Steam</a>
+          <a class="btn" href="/sanction.html">Official Website</a>
+        </div>
         <div class="featured__img-container">
           <div class="featured__img-wrapper">
             <img class="lazy loading" src="https://via.placeholder.com/1920x968" data-src="/Screenshot_0.jpg" alt="SANCTION Gameplay Screenshot 1" />
@@ -237,27 +214,29 @@
 
       <!-- Project Archive -->
       <section class="work container section reveal">
+        <p class="section__eyebrow">04 — Archive</p>
         <div class="work__wrapper">
           <h2 class="featured__title">Project Archive</h2>
-          <a aria-label="link to itch.io archive" class="featured__link" href="https://lelandcarter-archive.itch.io" target="_blank">
+          <a aria-label="itch.io archive" class="featured__link" href="https://lelandcarter-archive.itch.io" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"/>
             </svg>
           </a>
         </div>
         <p class="work__description">
-          A collection of my most memorable projects from 2012–Present. Lines of Code counts
-          exclude empty lines and may include some third-party packages.
+          A collection of my most memorable projects from 2012–Present.
+          Line counts exclude empty lines and may include some third-party packages.
         </p>
         <div class="work__container">
           <div class="work__grid" id="project-grid">
-            <!-- Project cards inserted by JS -->
+            <!-- Cards inserted by JS -->
           </div>
         </div>
       </section>
 
       <!-- Contact -->
       <section id="contact" class="contact container section reveal">
+        <p class="section__eyebrow">05 — Get in Touch</p>
         <h2 class="contact__title">Contact Me</h2>
         <p class="contact__description">
           I'm currently open to contract work — web design/development, software development,
@@ -316,7 +295,7 @@
         "javafx-browser": {
           title: "JavaFX Browser", subtitle: "Lightweight Web Browser",
           mainLink: "https://lelandcarter-archive.itch.io/browser",
-          description: "Lightweight browser built with Java FX. Features tabbed browsing, bookmarks, and a clean minimalist UI.",
+          description: "Lightweight browser built with Java FX featuring tabbed browsing, bookmarks, and a clean minimalist UI.",
           technology: "Java, JavaFX", type: "Desktop App", date: "2023",
           buttons: [{ text: "Download", url: "https://lelandcarter-archive.itch.io/browser" }, { text: "Github", url: "https://www.github.com/LethalLizard-Studios/Lightweight-Browser" }],
           stats: [{ value: "3,500+", label: "Lines of Code" }],
@@ -325,7 +304,7 @@
         "pools-horror": {
           title: "Pools Horror", subtitle: "Photorealistic Horror Game",
           mainLink: "https://lelandcarter-archive.itch.io/2023-c-unity-pools-horror",
-          description: "A horror game with photorealistic graphics using Unity HDRP. Players explore an abandoned pool facility.",
+          description: "A horror game with photorealistic graphics using Unity HDRP. Explore an abandoned pool facility.",
           technology: "C#, Unity HDRP", type: "Video Game", date: "2023",
           buttons: [{ text: "Play Now", url: "https://lelandcarter-archive.itch.io/2023-c-unity-pools-horror" }],
           stats: [{ value: "HDRP", label: "Render Pipeline" }],
@@ -333,7 +312,7 @@
         },
         "lego-battles": {
           title: "LEGO Battles", subtitle: "LEGO-Inspired Strategy Game",
-          description: "A strategy game inspired by LEGO Battles for Nintendo DS. Features multiple factions and base building.",
+          description: "A strategy game inspired by LEGO Battles for Nintendo DS featuring multiple factions and base building.",
           technology: "C#, Unity URP", type: "Video Game", date: "2023",
           buttons: [{ text: "View on Itch.io", url: "https://lelandcarter-archive.itch.io/lego-battles" }],
           stats: [{ value: "3", label: "Factions" }, { value: "RTS", label: "Genre" }],
@@ -357,7 +336,7 @@
         },
         "opengl-space": {
           title: "OpenGL Space Game", subtitle: "3D Space Exploration",
-          description: "A 3D space game built with OpenGL. Players navigate space, avoiding asteroids and collecting resources.",
+          description: "A 3D space game built with OpenGL where players navigate space avoiding asteroids and collecting resources.",
           technology: "C, OpenGL", type: "Academic Project", date: "2022",
           buttons: [{ text: "Play Now", url: "https://lelandcarter-archive.itch.io/spacegame" }],
           stats: [{ value: "CSCI 3161", label: "Course" }],
@@ -411,10 +390,10 @@
         },
         "slimeyquest-original": {
           title: "SlimeyQuest Original", subtitle: "2D Sandbox Game",
-          description: "The original SlimeyQuest — a 2D Sandbox where players build machines and mine resources. The goal: build a rocket and create a space station.",
+          description: "The original SlimeyQuest — a 2D sandbox where players build machines, mine resources, and launch a rocket to build a space station.",
           technology: "GML, GameMaker Studio", type: "Video Game", date: "2013",
-          buttons: [{ text: "Play Now", url: "https://www.lelandcarter-archive.itch.io/slimeyquest-og" }, { text: "Watch Video", url: "https://www.youtube.com/watch?v=1xuoPtVl_XA" }, { text: "Watch Trailer", url: "https://www.youtube.com/watch?v=w3Wv1KOzS2g" }, { text: "Original Website", url: "https://nuketimegames.wixsite.com/slimeyquest" }],
-          stats: [{ value: "First Released Game", label: "Milestone" }, { value: "2D", label: "Perspective" }, { value: "Lost Media", label: "Status" }],
+          buttons: [{ text: "Play Now", url: "https://www.lelandcarter-archive.itch.io/slimeyquest-og" }, { text: "Watch Trailer", url: "https://www.youtube.com/watch?v=w3Wv1KOzS2g" }, { text: "Original Website", url: "https://nuketimegames.wixsite.com/slimeyquest" }],
+          stats: [{ value: "First Released Game", label: "Milestone" }, { value: "Lost Media", label: "Status" }],
           images: [{ src: "/slimeyquest.jpg", alt: "SlimeyQuest Original Screenshot" }, { src: "/slimeyquest-1.jpg", alt: "SlimeyQuest Original Screenshot 2" }, { src: "/slimeyquest-web-1.png", alt: "SlimeyQuest Website Screenshot 1" }, { src: "/slimeyquest-web-2.png", alt: "SlimeyQuest Website Screenshot 2" }, { src: "/slimeyquest-web-3.png", alt: "SlimeyQuest Website Screenshot 3" }, { src: "/slimeyquest-web-4.png", alt: "SlimeyQuest Website Screenshot 4" }]
         },
         "slimey-jump": {
@@ -422,7 +401,7 @@
           description: "A 2-player jumping puzzle where players with custom slime colors race to the end of each level.",
           technology: "GML, GameMaker Studio", type: "Video Game", date: "2012",
           buttons: [],
-          stats: [{ value: "First Full Game", label: "Milestone" }, { value: "2D", label: "Perspective" }, { value: "Lost Media", label: "Status" }],
+          stats: [{ value: "First Full Game", label: "Milestone" }, { value: "Lost Media", label: "Status" }],
           images: [{ src: "/slimeyquest.jpg", alt: "Slimey Jump Screenshot" }]
         }
       };
@@ -436,7 +415,7 @@
           const card = document.createElement('div');
           card.className = 'work__card';
 
-          // Image section
+          // Image area
           const cardImg = document.createElement('div');
           cardImg.className = 'work__card-img';
 
@@ -458,7 +437,7 @@
             cardImg.appendChild(typeTag);
           }
 
-          // Body section
+          // Body area
           const cardBody = document.createElement('div');
           cardBody.className = 'work__card-body';
 
@@ -530,7 +509,7 @@
                 observer.unobserve(entry.target);
               }
             });
-          }, { threshold: 0.08 });
+          }, { threshold: 0.06 });
           elements.forEach(el => observer.observe(el));
         } else {
           elements.forEach(el => el.classList.add('visible'));

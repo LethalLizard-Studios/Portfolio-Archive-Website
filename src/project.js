@@ -387,13 +387,6 @@ function loadProjectData(project) {
     metaDescription.setAttribute('content', `${project.title} - ${project.description.substring(0, 150)}...`);
   }
   
-  // Add padding to the project detail section
-  const projectDetailSection = document.querySelector('.project-detail');
-  if (projectDetailSection) {
-    projectDetailSection.style.paddingLeft = 'clamp(3rem, 12vw, 7.5rem)';
-    projectDetailSection.style.paddingRight = 'clamp(3rem, 12vw, 7.5rem)';
-  }
-  
   // Set project details
   document.getElementById('project-title').textContent = project.title;
   document.getElementById('project-subtitle').textContent = project.subtitle;
